@@ -21,16 +21,34 @@ export default function Hero() {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display text-[clamp(4rem,15vw,10rem)] font-black leading-[0.8] tracking-tighter uppercase italic"
+            className="font-display text-[clamp(4rem,10vw,10rem)] font-black leading-[0.8] tracking-tighter uppercase italic"
           >
-            CRAFTING <br />
-            <span className="text-white/10 group-hover:text-brand-accent transition-colors duration-1000">KINETIC</span> <br />
-            SYSTEMS
+            Creative <span className="hover:text-[#7851A9] transition-colors duration-500 cursor-default">Minds</span>. <br />
+            <span className="text-white/10 group-hover:text-brand-accent transition-colors duration-1000">Stunning</span> <br />
+            <span className="hover:text-[#7851A9] transition-colors duration-500 cursor-default">Designs</span>
           </motion.h1>
           
           <div className="absolute top-0 right-0 p-8 hidden lg:block opacity-10">
             <span className="font-display text-[20rem] font-black leading-none select-none uppercase">Musti</span>
           </div>
+
+          <motion.div 
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5, duration: 1.5, ease: "easeOut" }}
+            className="absolute -right-12 xl:-right-24 top-1/2 -translate-y-1/2 hidden lg:block pointer-events-none"
+          >
+            <div className="relative group">
+              <div className="absolute inset-0 bg-brand-accent/20 blur-[100px] rounded-full group-hover:bg-brand-accent/30 transition-all duration-700 pulse-glow" />
+              <div className="relative z-10 w-[350px] xl:w-[450px] aspect-square overflow-hidden">
+                <img 
+                  src="https://i.imgur.com/geUowLP.png" 
+                  alt="Creative Showcase" 
+                  className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
+                />
+              </div>
+            </div>
+          </motion.div>
         </div>
 
         <motion.div 
