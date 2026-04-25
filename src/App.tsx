@@ -290,7 +290,7 @@ export default function App() {
                       <div className="h-px w-12 bg-brand-accent" />
                       <span className="text-2xl font-signature text-brand-accent">Biography</span>
                     </motion.div>
-                    <h2 className="text-6xl md:text-8xl font-display font-black tracking-tighter uppercase italic leading-[0.8] text-brand-white">
+                    <h2 className="text-6xl md:text-8xl font-display font-black tracking-tighter uppercase italic leading-tight text-brand-white">
                       THE VISION <br />
                       <span className="text-brand-gray/20">BEHIND ART</span>
                     </h2>

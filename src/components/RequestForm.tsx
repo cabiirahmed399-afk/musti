@@ -24,11 +24,11 @@ export default function RequestForm() {
         
         <div className="lg:w-1/2 relative z-10 flex flex-col justify-center">
           <div className="mb-0">
-            <h2 className="font-display text-6xl md:text-8xl font-black tracking-tighter mb-2 uppercase italic leading-[0.8] text-brand-white">
+            <h2 className="font-display text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-4 uppercase italic leading-tight text-brand-white">
               MUSTI <br />
               <span className="text-brand-accent">GRAPHIC'S</span>
             </h2>
-            <p className="text-4xl md:text-5xl font-signature text-brand-accent mb-10 -rotate-2 origin-left">Senior Graphic Designer</p>
+            <p className="text-3xl md:text-4xl lg:text-5xl font-signature text-brand-accent mb-12 -rotate-1 origin-left">Senior Graphic Designer</p>
           </div>
           
           <p className="text-base text-brand-gray leading-relaxed mb-12 max-w-sm">

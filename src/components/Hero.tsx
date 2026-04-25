@@ -21,7 +21,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display text-[clamp(4rem,10vw,10rem)] font-black leading-[0.8] tracking-tighter uppercase italic"
+            className="font-display text-[clamp(4rem,10vw,10rem)] font-black leading-none tracking-tighter uppercase italic"
           >
             Creative <span className="text-white/40 group-hover:text-[#7851A9] transition-colors duration-700 cursor-default">Minds</span>. <br />
             <span className="text-white/10 group-hover:text-brand-accent transition-colors duration-1000">Stunning</span> <br />
