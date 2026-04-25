@@ -25,10 +25,10 @@ export default function RequestForm() {
         <div className="lg:w-1/2 relative z-10 flex flex-col justify-center">
           <div className="mb-0">
             <h2 className="font-display text-6xl md:text-8xl font-black tracking-tighter mb-2 uppercase italic leading-[0.8] text-brand-white">
-              PROJECT <br />
-              <span className="text-brand-accent">INQUIRY</span>
+              MUSTI <br />
+              <span className="text-brand-accent">GRAPHIC'S</span>
             </h2>
-            <p className="text-4xl md:text-5xl font-signature text-brand-accent mb-10 -rotate-2 origin-left">Let's collaborate</p>
+            <p className="text-4xl md:text-5xl font-signature text-brand-accent mb-10 -rotate-2 origin-left">Senior Graphic Designer</p>
           </div>
           
           <p className="text-base text-brand-gray leading-relaxed mb-12 max-w-sm">
@@ -99,10 +99,10 @@ export default function RequestForm() {
                 <label className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-brand-gray/60 px-1">Service Tier</label>
                 <div className="relative">
                   <select className="w-full bg-brand-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:bg-brand-accent/5 focus:border-brand-accent/50 focus:ring-0 outline-none transition-all text-brand-white/80 text-sm appearance-none cursor-pointer">
-                    <option className="bg-brand-black">Service Design</option>
                     <option className="bg-brand-black">Branding</option>
                     <option className="bg-brand-black">Logo Design</option>
                     <option className="bg-brand-black">Poster Design</option>
+                    <option className="bg-brand-black">Editorial Design</option>
                   </select>
                   <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none opacity-40">
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">

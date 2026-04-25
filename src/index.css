@@ -1,10 +1,11 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Hurricane&family=Roboto:wght@400&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @theme {
   --font-sans: ui-sans-serif, system-ui, sans-serif;
   --font-display: "Montserrat", sans-serif;
-  --font-signature: "Great Vibes", cursive;
+  --font-signature: "Hurricane", cursive;
+  --font-roboto: "Roboto", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
   
   --color-brand-black: var(--color-bg-primary);
