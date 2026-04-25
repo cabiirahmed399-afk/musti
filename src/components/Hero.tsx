@@ -58,7 +58,7 @@ export default function Hero() {
           className="max-w-xl"
         >
           <p className="text-xl md:text-2xl font-light text-brand-gray leading-relaxed tracking-tight">
-            I am a professional <span className="text-brand-accent font-bold">Graphic Designer</span> specializing in creating modern, impactful, and visually clear designs for the digital age.
+            I am a professional <span className="text-brand-accent font-bold">Graphic Designer</span> specializing in Service Design, Brand Identity, Logo Creation, and Poster Art.
           </p>
         </motion.div>
 

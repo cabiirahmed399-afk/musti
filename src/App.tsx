@@ -301,7 +301,7 @@ export default function App() {
                       "I am a professional <span className="text-brand-white font-bold not-italic underline decoration-brand-accent/50 underline-offset-8">Graphic Designer</span> skilled in creating modern, impactful, and visually clear designs."
                     </p>
                     <p className="text-lg text-brand-gray/60 leading-relaxed max-w-lg">
-                      Specializing in branding, advertising, and digital content with full mastery of Adobe Creative Cloud. Delivering high-quality work that effectively communicates client goals.
+                      Specializing in Service Design, Brand Identity, Logo Creation, and Poster Art with full mastery of Adobe Creative Cloud. Delivering high-quality work that effectively communicates client goals.
                     </p>
                   </div>
 

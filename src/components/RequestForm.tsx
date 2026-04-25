@@ -99,10 +99,10 @@ export default function RequestForm() {
                 <label className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-brand-gray/60 px-1">Service Tier</label>
                 <div className="relative">
                   <select className="w-full bg-brand-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:bg-brand-accent/5 focus:border-brand-accent/50 focus:ring-0 outline-none transition-all text-brand-white/80 text-sm appearance-none cursor-pointer">
-                    <option className="bg-brand-black">Visual Identity</option>
-                    <option className="bg-brand-black">Editorial Design</option>
-                    <option className="bg-brand-black">UI/UX Systems</option>
-                    <option className="bg-brand-black">Packaging Art</option>
+                    <option className="bg-brand-black">Service Design</option>
+                    <option className="bg-brand-black">Branding</option>
+                    <option className="bg-brand-black">Logo Design</option>
+                    <option className="bg-brand-black">Poster Design</option>
                   </select>
                   <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none opacity-40">
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
