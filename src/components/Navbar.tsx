@@ -41,9 +41,12 @@ export default function Navbar({ isLight, setIsLight }: NavbarProps) {
             {isLight ? <Moon size={20} /> : <Sun size={20} />}
           </button>
 
-          <button className="px-5 py-2 bg-brand-accent text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">
-            Get in touch
-          </button>
+        <a 
+          href="mailto:cabiirahmed399@gmail.com"
+          className="px-5 py-2 bg-brand-accent text-white text-sm font-medium rounded-full hover:scale-105 transition-transform flex items-center gap-2"
+        >
+          Email me
+        </a>
         </div>
 
         <div className="flex md:hidden items-center gap-4">

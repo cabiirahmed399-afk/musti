@@ -6,6 +6,7 @@ import ProjectCard, { ProjectModal } from './components/ProjectGrid';
 import RequestForm from './components/RequestForm';
 import WhatsAppButton from './components/WhatsAppButton';
 import StatCounter from './components/StatCounter';
+import Footer from './components/Footer';
 import { projects } from './data';
 import { Project } from './types';
 import { Mail, Github, Instagram, Twitter, ExternalLink, Sun, Moon } from 'lucide-react';
@@ -283,20 +284,9 @@ export default function App() {
             >
               <RequestForm />
             </motion.div>
-          </div>
 
-          <footer className="mt-auto py-12 px-12 border-t border-[var(--color-border-subtle)] text-center">
-            <p className="text-[10px] font-mono text-brand-gray/30 uppercase tracking-[0.5em] mb-4">
-              © 2024 MUSTI GRAPHICS. DESIGNED FOR THE BOLD.
-            </p>
-            <div className="flex justify-center gap-6">
-               {[Instagram, Twitter, Github].map((Icon, i) => (
-                <a key={i} href="#" className="text-brand-gray/40 hover:text-brand-accent transition-colors">
-                  <Icon size={20} />
-                </a>
-              ))}
-            </div>
-          </footer>
+            <Footer />
+          </div>
         </main>
       </div>
 

@@ -61,6 +61,26 @@ export default function Hero() {
             I am a professional <span className="text-brand-accent font-bold">Graphic Designer</span> specializing in creating modern, impactful, and visually clear designs for the digital age.
           </p>
         </motion.div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 0.8 }}
+          className="mt-10"
+        >
+          <a 
+            href="mailto:cabiirahmed399@gmail.com"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-brand-accent text-white font-medium rounded-full hover:scale-105 transition-all text-lg shadow-xl shadow-brand-accent/20 group"
+          >
+            Email me
+            <motion.span
+              animate={{ x: [0, 5, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5 }}
+            >
+              →
+            </motion.span>
+          </a>
+        </motion.div>
       </div>
     </section>
   );
