@@ -185,14 +185,41 @@ export default function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="text-center md:text-left space-y-4 max-w-4xl"
+              className="text-center md:text-left space-y-12 max-w-6xl"
             >
-              <h3 className="text-4xl md:text-8xl font-display font-black tracking-tighter uppercase italic text-brand-accent">
-                iscm2026<span className="text-white/90">.</span>
-              </h3>
-              <p className="text-brand-gray text-lg md:text-2xl leading-relaxed max-w-2xl">
-                Elevating brands through precision design and futuristic storytelling. Let's create something extraordinary.
-              </p>
+              <div className="space-y-4">
+                <h3 className="text-4xl md:text-8xl font-display font-black tracking-tighter uppercase italic text-brand-accent">
+                  iscm2026<span className="text-white/90">.</span>
+                </h3>
+                <p className="text-brand-gray text-lg md:text-2xl leading-relaxed max-w-2xl">
+                  Elevating brands through precision design and futuristic storytelling. Let's create something extraordinary.
+                </p>
+              </div>
+
+              {/* Added Gallery from Footer */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+                {[
+                  'https://i.imgur.com/EzyQG0r.png',
+                  'https://i.imgur.com/gs2htZe.png',
+                  'https://i.imgur.com/Gv48NLV.png',
+                ].map((src, i) => (
+                  <motion.div
+                    key={i}
+                    whileHover={{ y: -15, scale: 1.02 }}
+                    className="relative group aspect-[4/5] bg-brand-elevated rounded-2xl overflow-hidden border border-white/10"
+                  >
+                    <img 
+                      src={src} 
+                      alt={`Gallery ${i}`} 
+                      className="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-[1s]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                      <span className="text-xs font-mono text-brand-accent uppercase tracking-widest mb-1">Identity Design</span>
+                      <span className="text-white font-bold uppercase tracking-tighter">iscm2026 v.0{i+1}</span>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
 
             {/* Portfolio Grid Section */}
