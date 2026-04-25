@@ -171,6 +171,19 @@ export default function App() {
 
             <div className="h-24 md:h-48" /> {/* Spacer */}
 
+            {/* Transition Title */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+              className="text-center md:text-left space-y-2"
+            >
+              <h3 className="text-4xl md:text-8xl font-display font-black tracking-tighter uppercase italic text-white/50">
+                iscm2026<span className="text-brand-accent">.</span>
+              </h3>
+            </motion.div>
+
             {/* Portfolio Grid Section */}
             <motion.section 
               id="works"

@@ -66,21 +66,26 @@ const Footer = () => {
               {galleryImages.map((src, i) => (
                 <motion.div
                   key={i}
-                  whileHover={{ y: -10, scale: 1.02 }}
-                  className="relative group aspect-video rounded-2xl overflow-hidden glass-card border border-white/5 bg-white/5"
+                  whileHover={{ 
+                    y: -15, 
+                    scale: 1.02,
+                    boxShadow: "0 40px 65px -15px rgba(120, 81, 169, 0.25)"
+                  }}
+                  className="relative group aspect-[4/5] bg-brand-elevated rounded-2xl overflow-hidden border border-white/5 transition-all duration-500"
                 >
                   <img 
                     src={src} 
                     alt={`Gallery ${i}`} 
-                    className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                    className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-[1.5s] ease-out group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-brand-accent/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/20 to-transparent opacity-0 group-hover:opacity-60 transition-opacity flex items-center justify-center">
                     <ExternalLink size={24} className="text-white transform scale-0 group-hover:scale-100 transition-transform" />
                   </div>
+                  <div className="absolute inset-0 border-2 border-brand-accent/0 group-hover:border-brand-accent/20 transition-all duration-500 rounded-2xl pointer-events-none" />
                 </motion.div>
               ))}
-              <div className="aspect-video rounded-2xl border-2 border-dashed border-white/5 flex items-center justify-center text-white/10 hover:border-white/20 hover:text-white/30 transition-all cursor-pointer">
-                <span className="text-xs uppercase tracking-widest font-medium">Coming Soon</span>
+              <div className="aspect-[4/5] rounded-2xl border-2 border-dashed border-white/5 bg-brand-elevated/20 flex items-center justify-center text-white/10 hover:border-white/20 hover:text-white/30 transition-all cursor-pointer">
+                <span className="text-xs uppercase tracking-widest font-medium italic">Project Discussion Coming</span>
               </div>
             </div>
           </div>
