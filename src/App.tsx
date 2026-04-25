@@ -313,7 +313,7 @@ export default function App() {
                       WhatsApp inquiry
                     </a>
                     <a 
-                      href="mailto:mustafabdi1453@gmail.com" 
+                      href="mailto:cabiirahmed399@gmail.com" 
                       className="px-8 py-4 border border-[var(--color-border-subtle)] bg-brand-elevated/40 backdrop-blur-md rounded-full font-bold text-xs tracking-widest hover:border-brand-accent transition-all uppercase"
                     >
                       Email Me
