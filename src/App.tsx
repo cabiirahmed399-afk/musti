@@ -47,17 +47,40 @@ export default function App() {
         <Navbar isLight={isLight} setIsLight={setIsLight} />
       </div>
       
-      <div className="flex flex-col md:flex-row max-w-[1440px] mx-auto min-h-screen relative z-10">
+      <div className="flex flex-col md:flex-row max-w-[1600px] mx-auto min-h-screen relative z-10">
         {/* Desktop Sidebar */}
-        <aside className="hidden md:flex w-80 h-screen sticky top-0 flex-col justify-between p-8 border-r border-[var(--color-border-subtle)]">
-          <div className="space-y-12">
+        <aside className="hidden md:flex w-80 h-screen sticky top-0 flex-col justify-between p-8 border-r border-[var(--color-border-subtle)] bg-[var(--color-bg-primary)]/50 backdrop-blur-sm shadow-2xl">
+          <div className="space-y-10">
             <div className="space-y-6">
-              <div className="w-20 h-20 bg-brand-elevated rounded-2xl overflow-hidden border border-[var(--color-border-subtle)]">
-                <img 
-                  src="https://i.imgur.com/gZq1slb.png" 
-                  alt="Musti Graphics Profile" 
-                  className="w-full h-full object-cover transition-all duration-500"
-                />
+              <div className="flex items-center justify-between">
+                <motion.div 
+                  whileHover={{ scale: 1.05 }}
+                  className="w-20 h-20 bg-brand-elevated rounded-2xl overflow-hidden border border-[var(--color-border-subtle)] shadow-lg cursor-pointer"
+                >
+                  <img 
+                    src="https://i.imgur.com/gZq1slb.png" 
+                    alt="Musti Graphics Profile" 
+                    className="w-full h-full object-cover"
+                  />
+                </motion.div>
+                <div className="flex flex-col gap-2">
+                  <div className="flex gap-1">
+                    {[
+                      'https://i.imgur.com/EzyQG0r.png',
+                      'https://i.imgur.com/gs2htZe.png',
+                      'https://i.imgur.com/Gv48NLV.png',
+                    ].map((src, i) => (
+                      <motion.div 
+                        key={i} 
+                        whileHover={{ scale: 1.2, opacity: 1, filter: 'grayscale(0)' }}
+                        className="w-7 h-7 rounded-md overflow-hidden border border-white/10 grayscale opacity-40 transition-all cursor-crosshair"
+                      >
+                        <img src={src} className="w-full h-full object-cover" />
+                      </motion.div>
+                    ))}
+                  </div>
+                  <span className="text-[8px] font-mono text-brand-accent uppercase tracking-widest text-right animate-pulse">Live Feed</span>
+                </div>
               </div>
               <div>
                 <h1 className="text-4xl font-black leading-none tracking-tighter uppercase font-display">
@@ -67,7 +90,7 @@ export default function App() {
               </div>
             </div>
 
-            <nav className="flex flex-col gap-4">
+            <nav className="flex flex-col gap-3">
               {[
                 { name: 'iscm2026', id: 'iscm2026' },
                 { name: 'Works', id: 'works' },

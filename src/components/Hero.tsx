@@ -21,30 +21,30 @@ export default function Hero() {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display text-[clamp(4rem,10vw,10rem)] font-black leading-none tracking-tighter uppercase italic"
+            className="font-display text-[clamp(3.5rem,8vw,8.5rem)] font-black leading-none tracking-tighter uppercase italic"
           >
-            Creative <span className="text-white/40 group-hover:text-[#7851A9] transition-colors duration-700 cursor-default">Minds</span>. <br />
-            <span className="text-white/10 group-hover:text-brand-accent transition-colors duration-1000">Stunning</span> <br />
-            <span className="text-white/40 group-hover:text-[#7851A9] transition-colors duration-700 cursor-default">Designs</span>
+            Creative <span className="text-white/40 hover:text-[#7851A9] transition-colors duration-700 cursor-default">Minds</span>. <br />
+            <span className="text-white/10 hover:text-brand-accent transition-colors duration-1000">Stunning</span> <br />
+            <span className="text-white/40 hover:text-[#7851A9] transition-colors duration-700 cursor-default">Designs</span>
           </motion.h1>
           
-          <div className="absolute top-0 right-0 p-8 hidden lg:block opacity-10 pointer-events-none select-none">
-            <span className="font-display text-[20rem] font-black leading-none uppercase">Musti</span>
+          <div className="absolute top-0 right-0 hidden xl:block opacity-[0.03] pointer-events-none select-none -translate-y-1/2 translate-x-1/2">
+            <span className="font-display text-[15rem] font-black leading-none uppercase">Musti</span>
           </div>
 
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:absolute lg:-right-12 xl:-right-24 lg:top-1/2 lg:-translate-y-1/2 mt-12 lg:mt-0 flex justify-center lg:block pointer-events-none z-0"
+            className="lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 mt-12 lg:mt-0 flex justify-center lg:block pointer-events-none z-0"
           >
             <div className="relative group">
-              <div className="absolute inset-0 bg-brand-accent/20 blur-[60px] md:blur-[100px] rounded-full group-hover:bg-brand-accent/30 transition-all duration-700 pulse-glow" />
-              <div className="relative z-10 w-[280px] md:w-[350px] xl:w-[450px] aspect-square overflow-hidden">
+              <div className="absolute inset-0 bg-brand-accent/20 blur-[60px] md:blur-[100px] rounded-full group-hover:bg-brand-accent/30 transition-all duration-700" />
+              <div className="relative z-10 w-[280px] md:w-[350px] xl:w-[400px] aspect-square overflow-hidden">
                 <img 
                   src="https://i.imgur.com/geUowLP.png" 
                   alt="Creative Showcase" 
-                  className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
+                  className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-[2s] scale-105 group-hover:scale-100"
                 />
               </div>
             </div>
