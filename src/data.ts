@@ -83,9 +83,9 @@ export const projects: Project[] = [
   },
   {
     id: '6',
-    title: 'Print & Advertising',
+    title: 'iscm2026',
     category: 'Print Media',
-    image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200',
+    image: 'https://i.imgur.com/Gv48NLV.png',
     description: 'High-quality print designs for billboard advertising and magazine layouts.',
     tags: ['Print', 'Advertising', 'Marketing'],
     client: 'Hage Media',
