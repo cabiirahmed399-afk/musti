@@ -89,6 +89,8 @@ export const projects: Project[] = [
     description: 'High-quality print designs for billboard advertising and magazine layouts.',
     tags: ['Print', 'Advertising', 'Marketing'],
     client: 'Hage Media',
+    year: '2024',
+    tools: ['Adobe Photoshop', 'Illustrator'],
     gallery: [
       'https://i.imgur.com/H1rd7rI.png',
       'https://i.imgur.com/dhpQDoa.png',

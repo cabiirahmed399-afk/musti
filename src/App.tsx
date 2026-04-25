@@ -30,7 +30,7 @@ export default function App() {
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0.4]);
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-bg-primary text-text-primary selection:bg-brand-accent selection:text-white relative">
+    <div ref={containerRef} className="min-h-screen bg-bg-primary text-text-primary selection:bg-brand-accent selection:text-white relative overflow-x-hidden">
       {/* Parallax Background Elements */}
       <motion.div 
         style={{ y: y1, opacity }}
