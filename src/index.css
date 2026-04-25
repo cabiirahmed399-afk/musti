@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-signature: "Great Vibes", cursive;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-black: var(--color-bg-primary);
+  --color-brand-elevated: var(--color-bg-secondary);
+  --color-brand-white: var(--color-text-primary);
+  --color-brand-gray: var(--color-text-secondary);
+  --color-brand-accent: #7851A9;
+
+  --color-bg-primary: #0A0A0A;
+  --color-bg-secondary: #151515;
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #888;
+  --color-border-subtle: rgba(255, 255, 255, 0.05);
+}
+
+:root.light {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f4f4f5;
+  --color-text-primary: #0A0A0A;
+  --color-text-secondary: #525252;
+  --color-border-subtle: rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  body {
+    @apply bg-brand-black text-brand-white font-sans antialiased transition-colors duration-300;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
