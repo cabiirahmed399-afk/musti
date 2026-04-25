@@ -5,8 +5,9 @@ import { Instagram, Twitter, Linkedin, Facebook, Mail, ExternalLink } from 'luci
 const Footer = () => {
   const stars = Array.from({ length: 20 });
   const galleryImages = [
-    'https://i.imgur.com/gs2htZe.png',
     'https://i.imgur.com/EzyQG0r.png',
+    'https://i.imgur.com/gs2htZe.png',
+    'https://i.imgur.com/Gv48NLV.png',
   ];
 
   return (
@@ -38,7 +39,7 @@ const Footer = () => {
           {/* Top Section: Brand & About */}
           <div className="space-y-6">
             <h2 className="font-display text-5xl md:text-7xl font-black italic uppercase tracking-tighter">
-              Musti<span className="text-brand-accent">.</span>
+              iscm2026<span className="text-brand-accent">.</span>
             </h2>
             <p className="text-brand-gray text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
               Elevating brands through precision design and futuristic storytelling. Let's create something extraordinary.
@@ -115,7 +116,7 @@ const Footer = () => {
         {/* Bottom Bar Centered */}
         <div className="w-full pt-10 border-t border-white/5 flex flex-col items-center gap-6">
           <p className="text-white/20 text-xs font-light tracking-widest uppercase">
-            © {new Date().getFullYear()} Musti Graphics. Designed with precision and passion.
+            © {new Date().getFullYear()} iscm2026. Designed with precision and passion.
           </p>
           <div className="flex gap-10 text-[10px] uppercase tracking-[0.3em] text-white/10">
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
