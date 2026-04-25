@@ -63,24 +63,6 @@ export default function App() {
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
-                <div className="flex flex-col gap-2">
-                  <div className="flex gap-1">
-                    {[
-                      'https://i.imgur.com/EzyQG0r.png',
-                      'https://i.imgur.com/gs2htZe.png',
-                      'https://i.imgur.com/Gv48NLV.png',
-                    ].map((src, i) => (
-                      <motion.div 
-                        key={i} 
-                        whileHover={{ scale: 1.2, opacity: 1, filter: 'grayscale(0)' }}
-                        className="w-7 h-7 rounded-md overflow-hidden border border-white/10 grayscale opacity-40 transition-all cursor-crosshair"
-                      >
-                        <img src={src} className="w-full h-full object-cover" />
-                      </motion.div>
-                    ))}
-                  </div>
-                  <span className="text-[8px] font-mono text-brand-accent uppercase tracking-widest text-right animate-pulse">Live Feed</span>
-                </div>
               </div>
               <div>
                 <h1 className="text-4xl font-black leading-none tracking-tighter uppercase font-display">
@@ -178,10 +160,10 @@ export default function App() {
             {/* Stats Bar */}
             <motion.section 
               id="experience"
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 md:p-8 bg-brand-elevated/40 backdrop-blur-md rounded-[2rem] border border-[var(--color-border-subtle)] shadow-xl"
             >
               {[
@@ -204,10 +186,10 @@ export default function App() {
             {/* Transition Title */}
             <motion.div
               id="iscm2026"
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               className="text-center md:text-left space-y-12 max-w-6xl"
             >
               <div className="space-y-4">
@@ -248,10 +230,10 @@ export default function App() {
             {/* Portfolio Grid Section */}
             <motion.section 
               id="works"
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               className="space-y-12"
             >
               <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
@@ -282,10 +264,10 @@ export default function App() {
             {/* About Section */}
             <motion.section 
               id="about" 
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               className="py-12 border-t border-[var(--color-border-subtle)] relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-96 h-96 bg-brand-accent/5 blur-[120px] rounded-full pointer-events-none" />
@@ -351,10 +333,10 @@ export default function App() {
             {/* Request Form Section */}
             <motion.div
               id="contact"
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <RequestForm />
             </motion.div>
