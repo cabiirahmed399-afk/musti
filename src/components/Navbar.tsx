@@ -22,14 +22,20 @@ export default function Navbar({ isLight, setIsLight }: NavbarProps) {
         </motion.div>
 
         <div className="hidden md:flex items-center gap-8">
-          {['Works', 'About', 'Services', 'Contact'].map((item) => (
+          {[
+            { name: 'iscm2026', id: 'iscm2026' },
+            { name: 'Works', id: 'works' },
+            { name: 'Experience', id: 'experience' },
+            { name: 'About', id: 'about' },
+            { name: 'Contact', id: 'contact' }
+          ].map((item) => (
             <motion.a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.name}
+              href={`#${item.id}`}
               whileHover={{ y: -2 }}
               className="text-sm font-medium text-[var(--color-text-primary)] hover:text-brand-gray transition-colors"
             >
-              {item}
+              {item.name}
             </motion.a>
           ))}
           
@@ -70,14 +76,20 @@ export default function Navbar({ isLight, setIsLight }: NavbarProps) {
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden bg-[var(--color-bg-primary)] border-b border-[var(--color-text-primary)]/5 px-6 py-8 flex flex-col gap-6"
         >
-          {['Works', 'About', 'Services', 'Contact'].map((item) => (
+          {[
+            { name: 'iscm2026', id: 'iscm2026' },
+            { name: 'Works', id: 'works' },
+            { name: 'Experience', id: 'experience' },
+            { name: 'About', id: 'about' },
+            { name: 'Contact', id: 'contact' }
+          ].map((item) => (
             <a 
-              key={item} 
-              href={`#${item.toLowerCase()}`} 
+              key={item.name} 
+              href={`#${item.id}`} 
               className="text-xl font-display font-medium text-[var(--color-text-primary)]" 
               onClick={() => setIsOpen(false)}
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </motion.div>

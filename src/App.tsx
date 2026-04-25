@@ -68,14 +68,20 @@ export default function App() {
             </div>
 
             <nav className="flex flex-col gap-4">
-              {['Works', 'About', 'Contact'].map((item) => (
+              {[
+                { name: 'iscm2026', id: 'iscm2026' },
+                { name: 'Works', id: 'works' },
+                { name: 'Experience', id: 'experience' },
+                { name: 'About', id: 'about' },
+                { name: 'Contact', id: 'contact' }
+              ].map((item) => (
                 <a 
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
+                  key={item.name}
+                  href={`#${item.id}`}
                   className="text-sm font-medium hover:text-brand-accent transition-colors flex items-center gap-3 transition-all group"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-accent scale-0 group-hover:scale-100 transition-transform"></span> 
-                  {item.toUpperCase()}
+                  {item.name.toUpperCase()}
                 </a>
               ))}
             </nav>
@@ -148,6 +154,7 @@ export default function App() {
 
             {/* Stats Bar */}
             <motion.section 
+              id="experience"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -173,15 +180,19 @@ export default function App() {
 
             {/* Transition Title */}
             <motion.div
+              id="iscm2026"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="text-center md:text-left space-y-2"
+              className="text-center md:text-left space-y-4 max-w-4xl"
             >
-              <h3 className="text-4xl md:text-8xl font-display font-black tracking-tighter uppercase italic text-white/50">
-                iscm2026<span className="text-brand-accent">.</span>
+              <h3 className="text-4xl md:text-8xl font-display font-black tracking-tighter uppercase italic text-brand-accent">
+                iscm2026<span className="text-white/90">.</span>
               </h3>
+              <p className="text-brand-gray text-lg md:text-2xl leading-relaxed max-w-2xl">
+                Elevating brands through precision design and futuristic storytelling. Let's create something extraordinary.
+              </p>
             </motion.div>
 
             {/* Portfolio Grid Section */}
