@@ -34,9 +34,9 @@ const Footer = () => {
           {/* Top Section: Brand & About */}
           <div className="space-y-6">
             <h2 className="font-display text-5xl md:text-7xl font-black italic uppercase tracking-tighter text-brand-accent">
-              iscm2026<span className="text-white">.</span>
+              iscm2026<span className="text-brand-white">.</span>
             </h2>
-            <p className="text-white/60 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            <p className="text-brand-gray/60 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
               Elevating brands through precision design and futuristic storytelling. Let's create something extraordinary.
             </p>
           </div>
@@ -80,25 +80,25 @@ const Footer = () => {
           <div className="pt-6">
             <a 
               href="mailto:cabiirahmed399@gmail.com" 
-              className="inline-flex items-center gap-4 px-10 py-5 rounded-full bg-white/5 border border-white/10 hover:bg-brand-accent hover:border-brand-accent transition-all group"
+              className="inline-flex items-center gap-4 px-10 py-5 rounded-full bg-brand-white/5 border border-[var(--color-border-subtle)] hover:bg-brand-accent hover:border-brand-accent transition-all group"
             >
-              <span className="text-white font-medium">Start a conversation</span>
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
-                <Mail size={16} className="text-white" />
+              <span className="text-brand-white font-medium uppercase text-xs tracking-widest">Start a conversation</span>
+              <div className="w-8 h-8 rounded-full bg-brand-white/10 flex items-center justify-center group-hover:bg-brand-white/20 transition-colors">
+                <Mail size={16} className="text-brand-white" />
               </div>
             </a>
           </div>
         </div>
 
         {/* Bottom Bar Centered */}
-        <div className="w-full pt-10 border-t border-white/5 flex flex-col items-center gap-6">
-          <p className="text-white/20 text-xs font-light tracking-widest uppercase">
+        <div className="w-full pt-10 border-t border-[var(--color-border-subtle)] flex flex-col items-center gap-6">
+          <p className="text-brand-gray/40 text-xs font-light tracking-widest uppercase">
             © {new Date().getFullYear()} iscm2026. Designed with precision and passion.
           </p>
-          <div className="flex gap-10 text-[10px] uppercase tracking-[0.3em] text-white/10">
-            <a href="#" className="hover:text-white transition-colors">Privacy</a>
-            <a href="#" className="hover:text-white transition-colors">Legal</a>
-            <a href="#" className="hover:text-white transition-colors">Cookies</a>
+          <div className="flex gap-10 text-[10px] uppercase tracking-[0.3em] text-brand-gray/20">
+            <a href="#" className="hover:text-brand-accent transition-colors">Privacy</a>
+            <a href="#" className="hover:text-brand-accent transition-colors">Legal</a>
+            <a href="#" className="hover:text-brand-accent transition-colors">Cookies</a>
           </div>
         </div>
       </div>

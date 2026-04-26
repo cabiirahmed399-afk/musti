@@ -35,7 +35,7 @@ export default function Navbar({ isLight, setIsLight }: NavbarProps) {
               key={item.name}
               href={`#${item.id}`}
               whileHover={{ y: -2 }}
-              className="text-sm font-medium text-[var(--color-text-primary)] hover:text-brand-gray transition-colors"
+              className="text-sm font-medium text-[var(--color-text-secondary)] hover:text-brand-accent transition-colors"
             >
               {item.name}
             </motion.a>
@@ -88,7 +88,7 @@ export default function Navbar({ isLight, setIsLight }: NavbarProps) {
             <a 
               key={item.name} 
               href={`#${item.id}`} 
-              className="text-xl font-display font-medium text-[var(--color-text-primary)]" 
+              className="text-xl font-display font-medium text-[var(--color-text-secondary)]" 
               onClick={() => setIsOpen(false)}
             >
               {item.name}

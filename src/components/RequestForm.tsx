@@ -81,7 +81,7 @@ export default function RequestForm() {
                     required
                     type="text" 
                     placeholder="Full Name"
-                    className="w-full bg-brand-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:bg-brand-accent/5 focus:border-brand-accent/50 focus:ring-0 outline-none transition-all placeholder:text-brand-gray/30 text-sm text-brand-white"
+                    className="w-full bg-brand-white/5 border border-[var(--color-border-subtle)] rounded-2xl px-6 py-4 focus:bg-brand-accent/5 focus:border-brand-accent/50 focus:ring-0 outline-none transition-all placeholder:text-brand-gray/30 text-sm text-brand-white"
                   />
                 </div>
                 <div className="space-y-2">
@@ -90,7 +90,7 @@ export default function RequestForm() {
                     required
                     type="email" 
                     placeholder="Email Address"
-                    className="w-full bg-brand-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:bg-brand-accent/5 focus:border-brand-accent/50 focus:ring-0 outline-none transition-all placeholder:text-brand-gray/30 text-sm text-brand-white"
+                    className="w-full bg-brand-white/5 border border-[var(--color-border-subtle)] rounded-2xl px-6 py-4 focus:bg-brand-accent/5 focus:border-brand-accent/50 focus:ring-0 outline-none transition-all placeholder:text-brand-gray/30 text-sm text-brand-white"
                   />
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default function RequestForm() {
               <div className="space-y-2">
                 <label className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-brand-gray/60 px-1">Service Tier</label>
                 <div className="relative">
-                  <select className="w-full bg-brand-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:bg-brand-accent/5 focus:border-brand-accent/50 focus:ring-0 outline-none transition-all text-brand-white/80 text-sm appearance-none cursor-pointer">
+                  <select className="w-full bg-brand-white/5 border border-[var(--color-border-subtle)] rounded-2xl px-6 py-4 focus:bg-brand-accent/5 focus:border-brand-accent/50 focus:ring-0 outline-none transition-all text-brand-white/80 text-sm appearance-none cursor-pointer">
                     <option className="bg-brand-black">Branding</option>
                     <option className="bg-brand-black">Logo Design</option>
                     <option className="bg-brand-black">Poster Design</option>
@@ -118,7 +118,7 @@ export default function RequestForm() {
                   required
                   rows={4}
                   placeholder="The vision, the goals, the constraints..."
-                  className="w-full bg-brand-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:bg-brand-accent/5 focus:border-brand-accent/50 focus:ring-0 outline-none transition-all resize-none placeholder:text-brand-gray/30 text-sm text-brand-white"
+                  className="w-full bg-brand-white/5 border border-[var(--color-border-subtle)] rounded-2xl px-6 py-4 focus:bg-brand-accent/5 focus:border-brand-accent/50 focus:ring-0 outline-none transition-all resize-none placeholder:text-brand-gray/30 text-sm text-brand-white"
                 />
               </div>
               

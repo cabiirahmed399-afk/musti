@@ -13,7 +13,7 @@ import { Mail, Github, Instagram, Twitter, ExternalLink, Sun, Moon } from 'lucid
 
 export default function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const [isLight, setIsLight] = useState(true);
+  const [isLight, setIsLight] = useState(false);
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll();
 
@@ -83,7 +83,7 @@ export default function App() {
                 <a 
                   key={item.name}
                   href={`#${item.id}`}
-                  className="text-sm font-medium hover:text-brand-accent transition-colors flex items-center gap-3 transition-all group"
+                  className="text-sm font-medium text-brand-gray hover:text-brand-accent transition-colors flex items-center gap-3 transition-all group"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-accent scale-0 group-hover:scale-100 transition-transform"></span> 
                   {item.name.toUpperCase()}
